@@ -1,91 +1,78 @@
+/* main setting */
+
 .roboto-thin {
     font-family: "Roboto", system-ui;
     font-weight: 100;
     font-style: normal;
   }
-  
   .roboto-light {
     font-family: "Roboto", system-ui;
     font-weight: 300;
     font-style: normal;
   }
-  
   .roboto-regular {
     font-family: "Roboto", system-ui;
     font-weight: 400;
     font-style: normal;
   }
-  
   .roboto-medium {
     font-family: "Roboto", system-ui;
     font-weight: 500;
     font-style: normal;
   }
-  
   .roboto-bold {
     font-family: "Roboto", system-ui;
     font-weight: 700;
     font-style: normal;
   }
-  
   .roboto-black {
     font-family: "Roboto", system-ui;
     font-weight: 900;
     font-style: normal;
   }
-  
   .roboto-thin-italic {
     font-family: "Roboto", system-ui;
     font-weight: 100;
     font-style: italic;
   }
-  
   .roboto-light-italic {
     font-family: "Roboto", system-ui;
     font-weight: 300;
     font-style: italic;
   }
-  
   .roboto-regular-italic {
     font-family: "Roboto", system-ui;
     font-weight: 400;
     font-style: italic;
   }
-  
   .roboto-medium-italic {
     font-family: "Roboto", system-ui;
     font-weight: 500;
     font-style: italic;
   }
-  
   .roboto-bold-italic {
     font-family: "Roboto", system-ui;
     font-weight: 700;
     font-style: italic;
   }
-  
   .roboto-black-italic {
     font-family: "Roboto", system-ui;
     font-weight: 900;
     font-style: italic;
   }
-  
-
-
 body {
     background-color: lightgrey; 
     margin: 0;
     width: 100%;
 }
 
+/* header */
+
 header {
     display: flex;
     width: 100%;
     margin: auto;
 }
-
-
-
 header {
     nav {
         display: flex;
@@ -95,79 +82,57 @@ header {
         font-family: "Roboto", system-ui;
         font-weight: 700;
         font-style: normal;
-        font-size: 30px;
-       
-        
+        font-size: 30px;  
     }
 }
-
 header {
     nav {
         svg {
-            
-            width: 100px;
-           
+            width: 100px; 
         }
     }
 }
-
 header {
     nav {
         ul { display: flex;
             list-style: none;
             gap: 120px;
-            
             margin: auto;
             text-transform: capitalize;
-            
-           
         }
 
     }
 }
-
 header {
     nav {
         ul { 
             li {
-               
                 justify-content: center;
-                text-align: center;
-                
-                
-                
-                
+                text-align: center; 
             }
            
         }
 
     }
 }
-
-
  header {
     nav {
         ul {
             li {
-                a  {text-decoration: none;
-                color: black;
-                    
+                a  {
+                text-decoration: none;
+                color: black;  
                 }
-
             }
         }
     }
  }
-
-
  header nav a:hover {
-    
-           text-decoration: underline;  
-           
+           text-decoration: underline;
+           transition: 1s;     
 }
 
-
-
+/* SEARCH BAR */
 
 nav {
   .search-barre {
@@ -175,123 +140,117 @@ nav {
     align-items: center;
     margin: auto;
     gap: 10px;
-   
-
   }
 }
 
-
-
-
-
-
-
+/* MAIN SECTION APROPOS */
 
 main #apropos {
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url('/images/black-white-background.jpg'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    z-index: 0;
-   
-    
+display: flex;
+flex-wrap: wrap;
+background-image: url('/images/black-white-background.jpg'); 
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+width: 100%;
+height: 100vh;
+position: relative;
+z-index: 0;  
  }
-
 .capture1 {
-  position: absolute;
-  margin: auto;
-  position: relative;
-  width: 400px;
-  z-index: 9999;
-  transform: translate(270px,100px);
-  border: 2px solid white;
-
+position: absolute;
+margin: auto;
+position: relative;
+width: 400px;
+z-index: 9999;
+transform: translate(270px,100px);
+border: 2px solid white;
 }
-
 .capture2 {
-  position: absolute;
-  margin: auto;
-  position: relative;
-  width: 400px;
-  z-index: 99;
-  transform: translate(-400px,0px);
-  border: 2px solid white;
-  
-
+position: absolute;
+margin: auto;
+position: relative;
+width: 400px;
+z-index: 99;
+transform: translate(-400px,0px);
+border: 2px solid white;
 }
-
 .mainTexte {
-  position: relative;
-  transform: translate(260px,0px);
-    color: white;
-    background-color: #575757;
-    width: 30%;
-    margin: auto;
-    font-family: "Roboto", system-ui;
-    font-weight: 100;
-    font-style: normal;
-    font-size: 30px;
-    padding: 30px;
-    border: 2px white solid;
-
-    }
-
+position: relative;
+transform: translate(260px,0px);
+color: white;
+background-color: #575757;
+width: 30%;
+margin: auto;
+font-family: "Roboto", system-ui;
+font-weight: 100;
+font-style: normal;
+font-size: 30px;
+padding: 30px;
+border: 2px white solid;
+}
 .presentation {
-  background-color: white;
-  flex-direction: column;
-  width: 100%;
-  
-  margin: 0;
-  display: flex;
-
-  
+background-color: white;
+flex-direction: column;
+width: 100%;  
+margin: 0;
+display: flex;
+}
+.presentation h1  {
+text-align: center;
+color: black;
+background-color: white;
+font-family: "Roboto", system-ui;
+font-size: 60px;
+font-weight: 300;
+margin: auto;
+}
+.presentation h3 {
+width: 100%;
+height: 50px;
+margin: auto;
+text-align: center;
+color: black;
+background-color: white;
+font-family: "Roboto", system-ui;
+font-size: 30px;
+font-weight: 100;
+}
+.logo {
+justify-content: center;
+gap: 50px;
+width: 100%;
+display: flex;
+background-color: #bfbfbf;
+padding-top: 40px;
+}
+.logo img:hover {
+transform: scale(1.2);
+transition: 1s;
 }
 
+/* MAIN SECTION portfolio */
 
 
-    .presentation h1  {
-      text-align: center;
-      color: black;
-      background-color: white;
-      font-family: "Roboto", system-ui;
-      font-size: 60px;
-      font-weight: 300;
-      
-      margin: auto;
-     
+main #portfolio {
+display: flex;
+flex-wrap: wrap;
+background-image: url('./images/grey-geometrical-shapes-background.jpg'); 
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+width: 100%;
+height: 100vh;
+position: relative;
+z-index: 0;  
     }
 
-    .presentation h3 {
-      width: 100%;
-      height: 50px;
-      margin: auto;
-      text-align: center;
-      color: black;
-      background-color: white;
-      font-family: "Roboto", system-ui;
-      font-size: 30px;
-      font-weight: 100;
-      
-    }
 
-    .logo {
-      justify-content: center;
-      gap: 50px;
-      width: 100%;
-      display: flex;
-      background-color: #bfbfbf;
-      padding-top: 40px;
-    }
 
-    .logo img:hover {
-      transform: scale(1.2);
-      
-    }
+
+
+
+
 
 
 
