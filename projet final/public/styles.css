@@ -178,7 +178,7 @@ background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
 width: 100%;
-height: 100vh;
+height: auto;
 position: relative;
 z-index: 0;  
  }
@@ -244,11 +244,12 @@ font-weight: 100;
 }
 .logo {
 justify-content: center;
-gap: 50px;
+gap: 70px;
 width: 100%;
 display: flex;
 background-color: #bfbfbf;
-padding-top: 40px;
+padding: 15px;
+
 }
 .logo img:hover {
 transform: scale(1.2);
